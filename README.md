@@ -3,15 +3,70 @@
 selenium tests tests for [softwaretestingboard.com](https://magento.softwaretestingboard.com/).
 
 ### Contents
+- [An overview of the tasks implemented](#An-overview-of-the-tasks-implemented)
 - [Pre-requisite](#Pre-requisite)
 - [Technology](#Technology)
 - [Allure report](#allure-report)
 - [Usage](#Usage)
 - [Requirements](#Requirements)
 - [File structure](#file-structure)
-- [Tests](#Tests)
 - [ScreenShots](#ScreenShots)
 - [To do](#to-do)
+
+### An overview of the tasks implemented
+<ul>
+  <li>Verify user registration
+    <ul>
+      <li>click [registration] link</li>
+      <li>fill in name</li>
+      <li>fill in email</li>
+      <li>fill in password</li>
+      <li>fill in password confirmation</li>
+      <li>click submit button</li>
+    </ul>
+  </li>
+  <li>Verify user  login
+    <ul>
+      <li>click [Sign in] link/li>
+      <li>fill in email</li>
+      <li>fill in password</li>
+      <li>check  page is correct </li>
+    </ul>
+  </li>
+  <li>Third item
+    <ul>
+      <li>Indented item</li>
+      <li>Indented item</li>
+      <li>Indented</li>
+    </ul>
+  </li>
+  <li>Verify product search functionality
+    <ul>
+      <li>type to search box product name</li>
+      <li>click search </li>
+      <li>check  page with products</li>
+    </ul>
+  </li>
+  <li>Verify add-to-cart functionality
+    <ul>
+      <li>click to product </li>
+      <li>click size button</li>
+      <li>click collor button </li>
+      <li>click [Add to Cart]</li>
+      <li>check message is success</li>
+    </ul>
+  </li>
+  <li>Verify the checkout process
+    <ul>
+      <li>click  cart</li>
+      <li>click  CheckOut</li>
+      <li>check is page correct </li>
+      <li>select shipping method</li>
+      <li>click Place Order</li>
+    </ul>
+  </li>
+</ul>
+
 
 ### Pre-requisite
 
@@ -60,39 +115,6 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 
 `Test` folder contains step definitions
 `objects` folder contains Page Object Model files
-
- 
-### Tests
--Verify user registration;
-    -click [registration] link
-    -fill in name
-    -fill in last name
-    -fill in email
-    -fill in password
-    -fill in password confirmation
-    -click submit button
--Verify user  login;
-    - click [Sign in] link
-    -fill in email
-    -fill in password
--Verify product search functionality;
-    -type to search box product name
-    - click search 
-    - check  page
--Verify add-to-cart functionality;
-    -click to product 
-    -click size button
-    -click collor button 
-    -click [Add to Cart]
-    -check message is success
--Verify the checkout process;
-    -click  cart
-    -click  CheckOut
-    -check is page correct 
-    -select shipping method
-    -click Place Order
-
-
 
 ### ScreenShots 
 
