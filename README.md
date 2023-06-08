@@ -17,26 +17,28 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 
 -   [Allure](https://docs.qameta.io/allure/#_get_started)  
     It may be [classic solutions with java](https://github.com/allure-framework/allure2#download) 
+- [Java](https://www.java.com/)
 
 ### Technology
+- [Java](https://www.java.com/)
 - [Selenium](https://www.selenium.dev/)
-- Allure Reporter
-- Maven
-- TestNG
+- [Allure Reporter](https://docs.qameta.io/allure/)
+- [Maven](https://maven.apache.org/)
+- [TestNG](https://testng.org/doc/)
 
 ### Allure report
 
--   is generated on every test run
+-   It is generated on every test run
 
 
 ### Usage
 - Download project
 - Go to root folder
-- Install the npm package with the command:
+- 
 
 
 ### Requirements
- :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v11+.
+ :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v11.
 
 ### File structure
 - src    
