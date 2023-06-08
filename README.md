@@ -1,19 +1,14 @@
 
 # selenium tests
-selenium tests tests for [softwaretestingboard.com](https://magento.softwaretestingboard.com/).
+Selenium tests tests for [softwaretestingboard.com](https://magento.softwaretestingboard.com/).
 
 ### Contents
 - [An overview of the tasks implemented](#An-overview-of-the-tasks-implemented)
 - [Description of the POM classes](#Description-of-the-POM-classes)
 - [Detailed steps on how to run the tests](#Detailed-steps-on-how-to-run-the-tests)
 - [Screenshots of the test results](#Screenshots-of-the-test-results)
-
 - [Pre-requisite](#Pre-requisite)
 - [Technology](#Technology)
-- [Allure report](#allure-report)
-- [Usage](#Usage)
-- [Requirements](#Requirements)
-- [File structure](#file-structure)
 - [ScreenShots](#ScreenShots)
 - [To do](#to-do)
 
@@ -31,7 +26,7 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
   </li>
   <li>Verify user  login
     <ul>
-      <li>click [Sign in] link/li>
+      <li>click [Sign in] link</li>
       <li>fill in email</li>
       <li>fill in password</li>
       <li>check  page is correct </li>
@@ -72,12 +67,57 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 </ul>
 
 ### Description of the POM classes
+All classes have the same structure 
+CSS locators for interactive elements
+```java
+	By linkRegistration 	= By.xpath("//a[contains(text(),'Create an Account')]");//header link to registration page
+	By linkLogin 			= By.xpath("//a[contains(text(),'Sign In')]");//header link to login page
+	By inputSearch 			= By.id("search");// search box
+	By buttonSearch			= By.cssSelector("button[title='Search']");//search button 
+```
+and methods for interaction
+```java
+  public void clickLinkRegistration()  {
+		driver.findElement(linkRegistration).click();
+	}//click on registration link
+	public void clickLinkLogin()  {
+		driver.findElement(linkLogin).click();
+	}//click on Sign in link
+	public void typeInputSearchProduct(String product)  {
+		driver.findElement(inputSearch).sendKeys(product);
+	}//type to search box
+	public void clickButtonSearch()  {
+		driver.findElement(buttonSearch).click();
+	}// click search button
+```
 
-### Detailed steps on how to run the tests
+<ul>
+<li>CatalogSearchPage  <i>contains locators: first product in list, message box and method for interaction   </i> </li>
+<li>CheckoutPage <i>contains locators: Shipping Method, Next button, Place Order button and method for interaction   </i></li>
+<li>LoginPage <i>contains locators: email input,password input, Login button and method for interaction   </i></li>
+<li>MainPage <i>contains locators: registration link,Login link, search box, search button, Cart button, Check Out button, Sign Out link		 and method for interaction </i></li>
+<li>ProductPage <i>contains locators: size button,color button, Add to Cart button, and method for interaction </i></li>
+<li>RegistrationPage <i>contains locators: Name,Last name, Email, Password, Pasword confirmation, Submit button and method for interaction </i></li> 
+</ul>
+
+### How to run the tests
+ - Open project in Eclipce IDE
+ - Right click on testng.xml file -> Rus As -> TestNG Suite
+![how_to_run](https://github.com/uxelisol/selenium/blob/main/screenshots/how_to_run.png)
+
+Or:
+- open terminal
+- Navigate to the project path using cd <project_path>
+- Run the following command 
+
+```
+java -cp <path of lib>; <path of bin folder>
+org.testng.TestNG <path of testng>/testng.xml
+```
 
 ### Screenshots of the test results.
-![allure result1](https://github.com/uxelisol/selenium/blob/main/allure1.png)
-![allure result2](https://github.com/uxelisol/selenium/blob/main/allure2.png)
+![allure result1](https://github.com/uxelisol/selenium/blob/main/screenshots/allure1.png)
+![allure result2](https://github.com/uxelisol/selenium/blob/main/screenshots/allure2.png)
 
 ### Pre-requisite
 
@@ -92,39 +132,8 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 - [Maven](https://maven.apache.org/)
 - [TestNG](https://testng.org/doc/)
 
-### Allure report
-
--   It is generated on every test run
-
-
-### Usage
-- Download project
-- Go to root folder
-- 
-
-
 ### Requirements
  :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v11.
-
-### File structure
-- test 
-    - java
-        - objects
-          - CatalogSearchPage.java 
-          - CheckoutPage.java
-          - LoginPage.java
-          - MainPage.java
-          - ProductPage.java
-          - RegistrationPage.java
-        - Test
-          - Scenarios
-          - TestMethods_softwaretestingboard.java
-
-
-   
-
-`Test` folder contains step definitions
-`objects` folder contains Page Object Model files
 
 
 ### To Do
