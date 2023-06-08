@@ -31,8 +31,20 @@ public class TestMethods_softwaretestingboard {
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 	
+	
+	@Test public void a_registerNewUser() {
+		MainPage mainpage = new MainPage(driver);
+		RegistrationPage registrationPage = new RegistrationPage(driver);
+		mainpage.clickLinkRegistration();
+		registrationPage.fillForm("SomeName", "Last", "astta@asd.com", "VeryStrongPass123");
+		String ActualTitle = driver.getTitle();
+		Assert.assertEquals(ActualTitle, "My Account", "wrong page title");	
+		mainpage.clickToggleMenu();
+		mainpage.clickLinkSignOut();
+		
+	}
 	@Test
-	public void a_loginUserWithCorrectCredentials() {
+	public void b_loginUserWithCorrectCredentials() {
 		MainPage mainpage = new MainPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -41,11 +53,11 @@ public class TestMethods_softwaretestingboard {
 		loginPage.typePassword("GoodPassword123");
 		loginPage.clickButtonSubmit();
 		String ActualTitle = driver.getTitle();
-		Assert.assertEquals(ActualTitle, "Home Page", "wrong page title");		
+		Assert.assertEquals(ActualTitle, "My Account", "wrong page title");		
 	}
 	
 	@Test
-	public void b_searchProductByName() {
+	public void c_searchProductByName() {
 		MainPage mainpage = new MainPage(driver);
 		mainpage.searchProduct("Hoodie");
 		String ActualTitle = driver.getTitle();
@@ -55,7 +67,7 @@ public class TestMethods_softwaretestingboard {
 	}
 	
 	@Test
-	public void c_addProductToCart() {
+	public void d_addProductToCart() {
 		CatalogSearchPage catalogSearchPage = new CatalogSearchPage(driver);
 		ProductPage productPage = new ProductPage(driver);
 		catalogSearchPage.clickFirstItem();
@@ -69,7 +81,7 @@ public class TestMethods_softwaretestingboard {
 		Assert.assertEquals(catalogSearchPage.isMessageVisible(), true);	
 	}
 	@Test
-	public void d_checkoutProcess() {
+	public void e_checkoutProcess() {
 		MainPage mainpage = new MainPage(driver);
 		CheckoutPage checkoutPage = new CheckoutPage(driver);
 		mainpage.clickButtonCart();

@@ -17,6 +17,8 @@ WebDriver driver;
 	By buttonSearch			= By.cssSelector("button[title='Search']");
 	By buttonCart			= By.cssSelector("div[data-block]");
 	By buttonCheckOut		= By.id("top-cart-btn-checkout");
+	By toggleMenu			= By.cssSelector("header button[data-action='customer-menu-toggle']");
+	By linkSignOut			= By.cssSelector("header .customer-menu .authorization-link a");
 	
 	
 
@@ -41,6 +43,12 @@ WebDriver driver;
 	}
 	public void clickButtonCheckOut() {
 		driver.findElement(buttonCheckOut).click();
+	}
+	public void clickToggleMenu() {
+		driver.findElement(toggleMenu).click();
+	}
+	public void clickLinkSignOut() {
+		driver.findElement(linkSignOut).click();
 	}
 	
 	

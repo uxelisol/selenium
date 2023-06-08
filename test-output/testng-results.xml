@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-08T15:46:35 GMT+03:00" name="Default suite" finished-at="2023-06-08T15:46:55 GMT+03:00" duration-ms="20261">
+  <suite started-at="2023-06-08T16:31:41 GMT+03:00" name="Default suite" finished-at="2023-06-08T16:32:10 GMT+03:00" duration-ms="29242">
     <groups>
     </groups>
-    <test started-at="2023-06-08T15:46:35 GMT+03:00" name="Default test" finished-at="2023-06-08T15:46:55 GMT+03:00" duration-ms="20261">
+    <test started-at="2023-06-08T16:31:41 GMT+03:00" name="Default test" finished-at="2023-06-08T16:32:10 GMT+03:00" duration-ms="29242">
       <class name="Test.Scenarios.TestMethods_softwaretestingboard">
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:35 GMT+03:00" name="beforetest" finished-at="2023-06-08T15:46:40 GMT+03:00" duration-ms="5234" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:31:41 GMT+03:00" name="beforetest" finished-at="2023-06-08T16:31:47 GMT+03:00" duration-ms="5873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method signature="a_loginUserWithCorrectCredentials()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:40 GMT+03:00" name="a_loginUserWithCorrectCredentials" finished-at="2023-06-08T15:46:44 GMT+03:00" duration-ms="4063" status="PASS">
+        <test-method signature="a_registerNewUser()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:31:47 GMT+03:00" name="a_registerNewUser" finished-at="2023-06-08T16:31:53 GMT+03:00" duration-ms="6609" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- a_loginUserWithCorrectCredentials -->
-        <test-method signature="b_searchProductByName()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:44 GMT+03:00" name="b_searchProductByName" finished-at="2023-06-08T15:46:47 GMT+03:00" duration-ms="2428" status="PASS">
+        </test-method> <!-- a_registerNewUser -->
+        <test-method signature="b_loginUserWithCorrectCredentials()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:31:54 GMT+03:00" name="b_loginUserWithCorrectCredentials" finished-at="2023-06-08T16:31:58 GMT+03:00" duration-ms="3943" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- b_searchProductByName -->
-        <test-method signature="c_addProductToCart()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:47 GMT+03:00" name="c_addProductToCart" finished-at="2023-06-08T15:46:51 GMT+03:00" duration-ms="3797" status="PASS">
+        </test-method> <!-- b_loginUserWithCorrectCredentials -->
+        <test-method signature="c_searchProductByName()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:31:58 GMT+03:00" name="c_searchProductByName" finished-at="2023-06-08T16:32:00 GMT+03:00" duration-ms="2474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- c_addProductToCart -->
-        <test-method signature="d_checkoutProcess()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:51 GMT+03:00" name="d_checkoutProcess" finished-at="2023-06-08T15:46:55 GMT+03:00" duration-ms="4314" status="PASS">
+        </test-method> <!-- c_searchProductByName -->
+        <test-method signature="d_addProductToCart()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:32:00 GMT+03:00" name="d_addProductToCart" finished-at="2023-06-08T16:32:04 GMT+03:00" duration-ms="3928" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- d_checkoutProcess -->
-        <test-method is-config="true" signature="aftertest()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@130e116b]" started-at="2023-06-08T15:46:55 GMT+03:00" name="aftertest" finished-at="2023-06-08T15:46:55 GMT+03:00" duration-ms="201" status="PASS">
+        </test-method> <!-- d_addProductToCart -->
+        <test-method signature="e_checkoutProcess()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:32:04 GMT+03:00" name="e_checkoutProcess" finished-at="2023-06-08T16:32:10 GMT+03:00" duration-ms="5939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_checkoutProcess -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:Test.Scenarios.TestMethods_softwaretestingboard@e383572]" started-at="2023-06-08T16:32:10 GMT+03:00" name="aftertest" finished-at="2023-06-08T16:32:10 GMT+03:00" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftertest -->
