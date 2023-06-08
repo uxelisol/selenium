@@ -1,5 +1,7 @@
 package Test.Scenarios;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -31,14 +33,13 @@ public class TestMethods_softwaretestingboard {
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 	
-	
 	@Test public void a_registerNewUser() {
 		MainPage mainpage = new MainPage(driver);
 		RegistrationPage registrationPage = new RegistrationPage(driver);
 		mainpage.clickLinkRegistration();
 		registrationPage.fillForm("SomeName", "Last", "astta@asd.com", "VeryStrongPass123");
 		String ActualTitle = driver.getTitle();
-		Assert.assertEquals(ActualTitle, "My Account", "wrong page title");	
+		AssertJUnit.assertEquals(ActualTitle, "My Account", "wrong page title");	
 		mainpage.clickToggleMenu();
 		mainpage.clickLinkSignOut();
 		
@@ -47,23 +48,21 @@ public class TestMethods_softwaretestingboard {
 	public void b_loginUserWithCorrectCredentials() {
 		MainPage mainpage = new MainPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
-		
 		mainpage.clickLinkLogin();
 		loginPage.typeEmail("aa@aa.aa");
 		loginPage.typePassword("GoodPassword123");
 		loginPage.clickButtonSubmit();
 		String ActualTitle = driver.getTitle();
-		Assert.assertEquals(ActualTitle, "My Account", "wrong page title");		
+		AssertJUnit.assertEquals(ActualTitle, "My Account", "wrong page title");		
 	}
-	
 	@Test
 	public void c_searchProductByName() {
 		MainPage mainpage = new MainPage(driver);
 		mainpage.searchProduct("Hoodie");
 		String ActualTitle = driver.getTitle();
 		String ActualURL	 = driver.getCurrentUrl();
-		Assert.assertEquals(ActualTitle, "Search results for: 'Hoodie'", "wrong page title");
-		Assert.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/catalogsearch/result/?q=Hoodie", "wrong page url");
+		AssertJUnit.assertEquals(ActualTitle, "Search results for: 'Hoodie'", "wrong page title");
+		AssertJUnit.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/catalogsearch/result/?q=Hoodie", "wrong page url");
 	}
 	
 	@Test
@@ -73,12 +72,12 @@ public class TestMethods_softwaretestingboard {
 		catalogSearchPage.clickFirstItem();
 		String ActualTitle = driver.getTitle();
 		String ActualURL	 = driver.getCurrentUrl();
-		Assert.assertEquals(ActualTitle, "Selene Yoga Hoodie");
-		Assert.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/selene-yoga-hoodie.html", "wrong page url");
+		AssertJUnit.assertEquals(ActualTitle, "Selene Yoga Hoodie");
+		AssertJUnit.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/selene-yoga-hoodie.html", "wrong page url");
 		productPage.clickSize();
 		productPage.clickColor();
 		productPage.clickButtonAddToCart();
-		Assert.assertEquals(catalogSearchPage.isMessageVisible(), true);	
+		AssertJUnit.assertEquals(catalogSearchPage.isMessageVisible(), true);	
 	}
 	@Test
 	public void e_checkoutProcess() {
@@ -87,24 +86,14 @@ public class TestMethods_softwaretestingboard {
 		mainpage.clickButtonCart();
 		mainpage.clickButtonCheckOut();
 		String ActualTitle = driver.getTitle();
-		Assert.assertEquals(ActualTitle, "Checkout");
+		AssertJUnit.assertEquals(ActualTitle, "Checkout");
 		checkoutPage.clickFirstShippingMethod();
 		checkoutPage.clickButtonNext();
 		String ActualURL = driver.getCurrentUrl();
-		Assert.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/checkout/#shipping");
+		AssertJUnit.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/checkout/#shipping");
 		
 	}
 
-	
-	
-
-	
-
-	
-	
-	
-	
-	
 	@AfterTest
 	public void aftertest() {
 		driver.quit();

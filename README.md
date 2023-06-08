@@ -4,6 +4,10 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 
 ### Contents
 - [An overview of the tasks implemented](#An-overview-of-the-tasks-implemented)
+- [Description of the POM classes](#Description-of-the-POM-classes)
+- [Detailed steps on how to run the tests](#Detailed-steps-on-how-to-run-the-tests)
+- [Screenshots of the test results](#Screenshots-of-the-test-results)
+
 - [Pre-requisite](#Pre-requisite)
 - [Technology](#Technology)
 - [Allure report](#allure-report)
@@ -67,6 +71,13 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
   </li>
 </ul>
 
+### Description of the POM classes
+
+### Detailed steps on how to run the tests
+
+### Screenshots of the test results.
+![allure result1](https://github.com/uxelisol/selenium/blob/main/allure1.png)
+![allure result2](https://github.com/uxelisol/selenium/blob/main/allure2.png)
 
 ### Pre-requisite
 
@@ -96,30 +107,24 @@ selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
  :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v11.
 
 ### File structure
-- src    
-    - test 
-        - java
-            - objects
-                -CatalogSearchPage.java 
-                -CheckoutPage.java
-                -LoginPage.java
-                -MainPage.java
-                -ProductPage.java
-                -RegistrationPage.java
-            - Test
-                -Scenarios
-                    -TestMethods_softwaretestingboard.java
+- test 
+    - java
+        - objects
+          - CatalogSearchPage.java 
+          - CheckoutPage.java
+          - LoginPage.java
+          - MainPage.java
+          - ProductPage.java
+          - RegistrationPage.java
+        - Test
+          - Scenarios
+          - TestMethods_softwaretestingboard.java
 
 
    
 
 `Test` folder contains step definitions
 `objects` folder contains Page Object Model files
-
-### ScreenShots 
-
-![allure result1](https://github.com/uxelisol/selenium/blob/main/allure1.png)
-![allure result2](https://github.com/uxelisol/selenium/blob/main/allure2.png)
 
 
 ### To Do
