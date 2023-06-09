@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="Test.Scenarios.TestMethods_registration"/>
       <class name="Test.Scenarios.TestMethods_softwaretestingboard"/>
     </classes>
   </test> <!-- Test -->

@@ -5,8 +5,9 @@
     <classes>
       <class name="Test.Scenarios.TestMethods_softwaretestingboard">
         <methods>
+          <include name="c_searchProductByName"/>
+          <include name="d_addProductToCart"/>
           <include name="aftertest"/>
-          <include name="b_loginUserWithCorrectCredentials"/>
           <include name="beforetest"/>
         </methods>
       </class> <!-- Test.Scenarios.TestMethods_softwaretestingboard -->
