@@ -32,13 +32,6 @@ Selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
       <li>check  page is correct </li>
     </ul>
   </li>
-  <li>Third item
-    <ul>
-      <li>Indented item</li>
-      <li>Indented item</li>
-      <li>Indented</li>
-    </ul>
-  </li>
   <li>Verify product search functionality
     <ul>
       <li>type to search box product name</li>

@@ -31,7 +31,7 @@ public class TestMethods_registration {
 		MainPage mainpage = new MainPage(driver);
 		RegistrationPage registrationPage = new RegistrationPage(driver);
 		mainpage.clickLinkRegistration();
-		registrationPage.fillForm("SomeName", "Last", "ww@asd.com", "VeryStrongPass123");
+		registrationPage.fillForm("SomeName", "Last", "kk@asd.com", "VeryStrongPass123");
 		String ActualTitle = driver.getTitle();
 		AssertJUnit.assertEquals(ActualTitle, "My Account");			
 	}
