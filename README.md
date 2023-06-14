@@ -128,6 +128,3 @@ org.testng.TestNG <path of testng>/testng.xml
 ### Requirements
  :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v1.7.
 
-
-### To Do
-:fix problem with flaky test
