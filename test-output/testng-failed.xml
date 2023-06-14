@@ -7,9 +7,16 @@
         <methods>
           <include name="aftertest"/>
           <include name="beforetest"/>
-          <include name="a_registerNewUser"/>
+          <include name="aRegisterNewUser"/>
         </methods>
       </class> <!-- Test.Scenarios.TestMethodsRegistration -->
+      <class name="Test.Scenarios.TestMethodsSoftwaretestingboard">
+        <methods>
+          <include name="dAddProductToCart"/>
+          <include name="aftertest"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Test.Scenarios.TestMethodsSoftwaretestingboard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

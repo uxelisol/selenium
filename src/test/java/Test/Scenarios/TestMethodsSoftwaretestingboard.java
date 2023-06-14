@@ -62,7 +62,7 @@ public class TestMethodsSoftwaretestingboard {
 	public void dAddProductToCart() {
 		CatalogSearchPage catalogSearchPage = new CatalogSearchPage(driver);
 		ProductPage productPage = new ProductPage(driver);
-		catalogSearchPage.scrollToFirstElement();
+		catalogSearchPage.scrollToFirstItem();
 		catalogSearchPage.clickFirstItem();
 		String ActualTitle = driver.getTitle();
 		String ActualURL = driver.getCurrentUrl();

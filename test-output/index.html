@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsRegistration" class="method navigator-link" hash-for-method="a_registerNewUser">a_registerNewUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsRegistration" class="method navigator-link" hash-for-method="aRegisterNewUser">aRegisterNewUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="dAddProductToCart">dAddProductToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,22 +122,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="b_loginUserWithCorrectCredentials">b_loginUserWithCorrectCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="bLoginUserWithCorrectCredentials">bLoginUserWithCorrectCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="c_searchProductByName">c_searchProductByName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="cSearchProductByName">cSearchProductByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="d_addProductToCart">d_addProductToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="e_checkoutProcess">e_checkoutProcess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.Scenarios.TestMethodsSoftwaretestingboard" class="method navigator-link" hash-for-method="eCheckoutProcess">eCheckoutProcess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -155,18 +155,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="a_registerNewUser">
-                  </a> <!-- a_registerNewUser -->
-                  <span class="method-name">a_registerNewUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+                  <a name="aRegisterNewUser">
+                  </a> <!-- aRegisterNewUser -->
+                  <span class="method-name">aRegisterNewUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;Create New Customer Account&gt; but was:&lt;My Account&gt;
+	at Test.Scenarios.TestMethodsRegistration.aRegisterNewUser(TestMethodsRegistration.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.Scenarios.TestMethodsSoftwaretestingboard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dAddProductToCart">
+                  </a> <!-- dAddProductToCart -->
+                  <span class="method-name">dAddProductToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLLIElement] has no size and location
   (Session info: chrome=110.0.5481.100)
 Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-72-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4606dfff44b1827d824cd0e86d220cfa, findElement {using=xpath, value=//a[contains(text(),&apos;Create an Account&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.OVnHKk}, goog:chromeOptions: {debuggerAddress: localhost:37007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37007/devtoo..., se:cdpVersion: 110.0.5481.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4606dfff44b1827d824cd0e86d220cfa
+Command: [38ffc459811b8cfe1a3d5d88398dd795, actions {actions=[org.openqa.selenium.interactions.Sequence@138aa3cc]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.sbXste}, goog:chromeOptions: {debuggerAddress: localhost:39173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39173/devtoo..., se:cdpVersion: 110.0.5481.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38ffc459811b8cfe1a3d5d88398dd795
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -174,12 +193,11 @@ Session ID: 4606dfff44b1827d824cd0e86d220cfa
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at objects.MainPage.clickLinkRegistration(MainPage.java:24)
-	at Test.Scenarios.TestMethodsRegistration.a_registerNewUser(TestMethodsRegistration.java:34)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at objects.CatalogSearchPage.scrollToFirstItem(CatalogSearchPage.java:29)
+	at Test.Scenarios.TestMethodsSoftwaretestingboard.dAddProductToCart(TestMethodsSoftwaretestingboard.java:65)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -195,30 +213,23 @@ Session ID: 4606dfff44b1827d824cd0e86d220cfa
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="b_loginUserWithCorrectCredentials">
-                  </a> <!-- b_loginUserWithCorrectCredentials -->
-                  <span class="method-name">b_loginUserWithCorrectCredentials</span>
+                  <a name="bLoginUserWithCorrectCredentials">
+                  </a> <!-- bLoginUserWithCorrectCredentials -->
+                  <span class="method-name">bLoginUserWithCorrectCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="c_searchProductByName">
-                  </a> <!-- c_searchProductByName -->
-                  <span class="method-name">c_searchProductByName</span>
+                  <a name="cSearchProductByName">
+                  </a> <!-- cSearchProductByName -->
+                  <span class="method-name">cSearchProductByName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="d_addProductToCart">
-                  </a> <!-- d_addProductToCart -->
-                  <span class="method-name">d_addProductToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="e_checkoutProcess">
-                  </a> <!-- e_checkoutProcess -->
-                  <span class="method-name">e_checkoutProcess</span>
+                  <a name="eCheckoutProcess">
+                  </a> <!-- eCheckoutProcess -->
+                  <span class="method-name">eCheckoutProcess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -278,30 +289,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'e_checkoutProcess')
-data.setCell(0, 2, 'Test.Scenarios.TestMethodsSoftwaretestingboard')
-data.setCell(0, 3, 10536);
+data.setCell(0, 1, 'aRegisterNewUser')
+data.setCell(0, 2, 'Test.Scenarios.TestMethodsRegistration')
+data.setCell(0, 3, 6801);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'b_loginUserWithCorrectCredentials')
+data.setCell(1, 1, 'eCheckoutProcess')
 data.setCell(1, 2, 'Test.Scenarios.TestMethodsSoftwaretestingboard')
-data.setCell(1, 3, 5418);
+data.setCell(1, 3, 5593);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'd_addProductToCart')
+data.setCell(2, 1, 'bLoginUserWithCorrectCredentials')
 data.setCell(2, 2, 'Test.Scenarios.TestMethodsSoftwaretestingboard')
-data.setCell(2, 3, 4250);
+data.setCell(2, 3, 4094);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'c_searchProductByName')
+data.setCell(3, 1, 'cSearchProductByName')
 data.setCell(3, 2, 'Test.Scenarios.TestMethodsSoftwaretestingboard')
-data.setCell(3, 3, 3599);
+data.setCell(3, 3, 3260);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'a_registerNewUser')
-data.setCell(4, 2, 'Test.Scenarios.TestMethodsRegistration')
-data.setCell(4, 3, 83);
+data.setCell(4, 1, 'dAddProductToCart')
+data.setCell(4, 2, 'Test.Scenarios.TestMethodsSoftwaretestingboard')
+data.setCell(4, 3, 89);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -337,7 +348,7 @@ return data;
               <div class="chronological-class-name">Test.Scenarios.TestMethodsSoftwaretestingboard</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforetest</span>
-                <span class="method-start">75044 ms</span>
+                <span class="method-start">5731 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -345,41 +356,43 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">a_registerNewUser</span>
-                <span class="method-start">81318 ms</span>
+                <span class="method-name">aRegisterNewUser</span>
+                <span class="method-start">9652 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Scenarios.TestMethodsSoftwaretestingboard</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">b_loginUserWithCorrectCredentials</span>
-                <span class="method-start">81489 ms</span>
+                <span class="method-name">bLoginUserWithCorrectCredentials</span>
+                <span class="method-start">17039 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">c_searchProductByName</span>
-                <span class="method-start">86915 ms</span>
+                <span class="method-name">cSearchProductByName</span>
+                <span class="method-start">21145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">d_addProductToCart</span>
-                <span class="method-start">90519 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dAddProductToCart</span>
+                <span class="method-start">24413 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">e_checkoutProcess</span>
-                <span class="method-start">94773 ms</span>
+                <span class="method-name">eCheckoutProcess</span>
+                <span class="method-start">24510 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Scenarios.TestMethodsRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">105312 ms</span>
+                <span class="method-start">30107 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.Scenarios.TestMethodsSoftwaretestingboard</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">105421 ms</span>
+                <span class="method-start">31729 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

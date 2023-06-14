@@ -23,7 +23,7 @@ public class CatalogSearchPage {
 		return driver.findElement(message).isDisplayed();
 	}
 	
-	public void scrollToFirstElement() {
+	public void scrollToFirstItem() {
 		new Actions(driver)
         .scrollToElement(driver.findElement(buttonFirstProduct))
         .perform();
