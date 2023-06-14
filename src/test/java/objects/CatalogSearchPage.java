@@ -22,11 +22,9 @@ public class CatalogSearchPage {
 	public boolean isMessageVisible() {
 		return driver.findElement(message).isDisplayed();
 	}
-	
+
 	public void scrollToFirstItem() {
-		new Actions(driver)
-        .scrollToElement(driver.findElement(buttonFirstProduct))
-        .perform();
+		new Actions(driver).scrollToElement(driver.findElement(buttonFirstProduct)).perform();
 	}
 
 }
