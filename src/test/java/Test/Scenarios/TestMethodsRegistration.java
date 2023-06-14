@@ -28,7 +28,7 @@ public class TestMethodsRegistration {
 	}
 
 	@Test
-	public void aRegisterNewUser() {
+	public void registerNewUser() {
 		MainPage mainpage = new MainPage(driver);
 		RegistrationPage registrationPage = new RegistrationPage(driver);
 		mainpage.clickLinkRegistration();

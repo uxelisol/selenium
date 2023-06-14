@@ -33,8 +33,8 @@ public class TestMethodsSoftwaretestingboard {
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 
-	@Test
-	public void bLoginUserWithCorrectCredentials() {
+	@Test (priority = 1)
+	public void loginUserWithCorrectCredentials() {
 		MainPage mainpage = new MainPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
 		mainpage.clickLinkLogin();
@@ -48,8 +48,8 @@ public class TestMethodsSoftwaretestingboard {
 
 	}
 
-	@Test
-	public void cSearchProductByName() {
+	@Test (priority = 2)
+	public void searchProductByName() {
 		MainPage mainpage = new MainPage(driver);
 		mainpage.searchProduct("Hoodie");
 		String ActualTitle = driver.getTitle();
@@ -58,8 +58,8 @@ public class TestMethodsSoftwaretestingboard {
 		AssertJUnit.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/catalogsearch/result/?q=Hoodie");
 	}
 
-	@Test
-	public void dAddProductToCart() {
+	@Test (priority = 3)
+	public void addProductToCart() {
 		CatalogSearchPage catalogSearchPage = new CatalogSearchPage(driver);
 		ProductPage productPage = new ProductPage(driver);
 		catalogSearchPage.scrollToFirstItem();
@@ -74,8 +74,8 @@ public class TestMethodsSoftwaretestingboard {
 		AssertJUnit.assertTrue(catalogSearchPage.isMessageVisible());
 	}
 
-	@Test
-	public void eCheckoutProcess() {
+	@Test (priority = 4)
+	public void checkoutProcess() {
 		MainPage mainpage = new MainPage(driver);
 		CheckoutPage checkoutPage = new CheckoutPage(driver);
 		mainpage.clickButtonCart();
