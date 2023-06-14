@@ -10,7 +10,6 @@ Selenium tests tests for [softwaretestingboard.com](https://magento.softwaretest
 - [Pre-requisite](#Pre-requisite)
 - [Technology](#Technology)
 - [ScreenShots](#ScreenShots)
-- [To do](#to-do)
 
 ### An overview of the tasks implemented
 <ul>
