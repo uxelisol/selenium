@@ -14,8 +14,8 @@ public class ProductPage {
 	By colorBlueOption		= By.id("option-label-color-93-item-56");
 	By buttonAddToCart		= By.cssSelector("button[title='Add to Cart']");
 	
-	public void clickSize()  {
-		 driver.findElement(sizeMOption).click();
+	public void clickSize() {
+		driver.findElement(sizeMOption).click();
 	}
 	public void clickColor()  {
 		 driver.findElement(colorBlueOption).click();

@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.Scenarios.TestMethods_softwaretestingboard">
+      <class name="Test.Scenarios.TestMethods_registration">
         <methods>
-          <include name="c_searchProductByName"/>
-          <include name="d_addProductToCart"/>
-          <include name="aftertest"/>
+          <include name="a_registerNewUser"/>
           <include name="beforetest"/>
+          <include name="aftertest"/>
         </methods>
-      </class> <!-- Test.Scenarios.TestMethods_softwaretestingboard -->
+      </class> <!-- Test.Scenarios.TestMethods_registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

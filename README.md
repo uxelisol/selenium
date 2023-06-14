@@ -126,7 +126,7 @@ org.testng.TestNG <path of testng>/testng.xml
 - [TestNG](https://testng.org/doc/)
 
 ### Requirements
- :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v11.
+ :exclamation: To install and run the project, you need [Java ](https://www.java.com/) v1.7.
 
 
 ### To Do

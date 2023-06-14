@@ -3,23 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test.Scenarios.TestMethods_registration">
+      <class name="Test.Scenarios.TestMethodsRegistration">
         <methods>
+          <include name="aftertest"/>
+          <include name="beforetest"/>
           <include name="a_registerNewUser"/>
-          <include name="beforetest"/>
-          <include name="aftertest"/>
         </methods>
-      </class> <!-- Test.Scenarios.TestMethods_registration -->
-      <class name="Test.Scenarios.TestMethods_softwaretestingboard">
-        <methods>
-          <include name="e_checkoutProcess"/>
-          <include name="c_searchProductByName"/>
-          <include name="d_addProductToCart"/>
-          <include name="aftertest"/>
-          <include name="b_loginUserWithCorrectCredentials"/>
-          <include name="beforetest"/>
-        </methods>
-      </class> <!-- Test.Scenarios.TestMethods_softwaretestingboard -->
+      </class> <!-- Test.Scenarios.TestMethodsRegistration -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
