@@ -33,7 +33,7 @@ public class TestMethodsSoftwaretestingboard {
 		driver.get("https://magento.softwaretestingboard.com/");
 	}
 
-	@Test (priority = 1)
+	@Test(priority = 1)
 	public void loginUserWithCorrectCredentials() {
 		MainPage mainpage = new MainPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
@@ -48,7 +48,7 @@ public class TestMethodsSoftwaretestingboard {
 
 	}
 
-	@Test (priority = 2)
+	@Test(priority = 2)
 	public void searchProductByName() {
 		MainPage mainpage = new MainPage(driver);
 		mainpage.searchProduct("Hoodie");
@@ -58,7 +58,7 @@ public class TestMethodsSoftwaretestingboard {
 		AssertJUnit.assertEquals(ActualURL, "https://magento.softwaretestingboard.com/catalogsearch/result/?q=Hoodie");
 	}
 
-	@Test (priority = 3)
+	@Test(priority = 3)
 	public void addProductToCart() {
 		CatalogSearchPage catalogSearchPage = new CatalogSearchPage(driver);
 		ProductPage productPage = new ProductPage(driver);
@@ -74,7 +74,7 @@ public class TestMethodsSoftwaretestingboard {
 		AssertJUnit.assertTrue(catalogSearchPage.isMessageVisible());
 	}
 
-	@Test (priority = 4)
+	@Test(priority = 4)
 	public void checkoutProcess() {
 		MainPage mainpage = new MainPage(driver);
 		CheckoutPage checkoutPage = new CheckoutPage(driver);

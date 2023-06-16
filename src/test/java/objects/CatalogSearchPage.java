@@ -12,7 +12,7 @@ public class CatalogSearchPage {
 		this.driver = driver;
 	}
 
-	By buttonFirstProduct = By.xpath("//ol/li");
+	By buttonFirstProduct = By.cssSelector(".search.results ol li:first-child");
 	By message = By.cssSelector("div[role='alert']");
 
 	public void clickFirstItem() {

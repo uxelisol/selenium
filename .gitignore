@@ -8,7 +8,14 @@
 
 
 # Allure
-allure-results/
+/allure-results/
+
+
+/test-output/
+/target/
+
+
+
 
 ### macOS ###
 *.DS_Store
